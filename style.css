@@ -5,21 +5,104 @@
 }
 
 body {
+    width: 100%;
+    height: 100vh;
     background-color: #fafafa;
-    font-size:15px ;
+    font-size: 1rem;
+    padding: 3rem 2rem;
+    text-align: justify;
+ 
 }
 
 .card-container {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-title {
     color: #9c9ba3;
+    font-family: 'Poppins';
+    font-weight: 200;
+    text-align: center;
 }
 .second-title {
     color: #4c4d5f;
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.presentation {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #b7b6bb;
+}
+.two-middle-cards {
+    width: 100%;
 }
 .card {
-    width:200px ;
-    height: 200px;
+    width: 100%;
+    height: 17rem;
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px  #e0e7f1;
+}
+.card:nth-child(1) {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.two-middle-cards .card:nth-child(1) {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.two-middle-cards .card:nth-child(2) {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+.card-container .card:nth-child(3) {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+.card-header {
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.card-content {
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #b4b4b6;
+    margin: 10px 0;
+
+}
+.card img {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-top: 20px;
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+ 
+    body {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 3% 10%;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+
+    .two-middle-cards {
+       display: flex;
+       flex-direction: column;
+    }
+  
 }
